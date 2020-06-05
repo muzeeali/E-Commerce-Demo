@@ -1,0 +1,701 @@
+body{
+    background-color: rgb(233, 232, 232);
+}
+/* top nav */
+.navleft{
+    /* float: right; */
+    display: inline-block;
+    text-align: center;
+}
+.navright{
+    display: inline-block;
+    text-align: center;
+    color: whitesmoke !important;
+}
+.navmain{
+    text-align: center;
+    background-color: #3700b3;
+    color: whitesmoke !important;
+}
+.navmain a{
+    color: whitesmoke;
+  
+}
+.navmain a:hover{
+    zoom: 1.2;
+    border-radius: 50px;
+   
+}
+
+
+.navbarr{
+    position: sticky;
+    top: 0em;
+    z-index: 1;
+}
+.navbar {
+  background-color: #006064  !important; 
+  padding-left: 30px;
+  
+ 
+}
+.navbar img{
+    margin-right: 30px;
+    width: 120px;
+}
+.disabled{
+    background-color: gray !important;
+    border-radius: 50px;
+    padding: 5px !important;
+    margin-top: 5px !important;
+}
+
+#navbarNav a{
+   margin-right: 15px;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+    font-weight: bold;
+    padding-left: 5px;
+    margin-left: 20px;
+  
+}
+#navbarNav a:hover{
+    background-color: #009688;
+    border-radius: 50px;
+line-height: 15px;
+
+}
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #006064 ;
+    min-width: 120px;
+    box-shadow: 2px 2px 5px #09adb3;
+padding-bottom: 10px;
+    z-index: 1;
+ padding-left: 0%;
+ 
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+   
+  }
+  .dropdown:hover .dropdown-content {display: block;}
+
+/* marquee */
+.mar{
+    padding: 0em;
+    margin: 0em;
+    border: 0em;
+    width: 100%;
+ 
+}
+.marque
+{
+    background-color: #006064;
+    color: white;
+    vertical-align: middle;
+    padding-top: 2px;
+}
+  
+  /* mission */
+  .mission h2{
+      font-family:  Impact,  'Arial Narrow Bold', sans-serif;
+      font-size: 4em;
+      text-align: center;
+      padding-top: 15px;
+      text-shadow: 2px 2px 1px grey;
+  }
+  .mission h3{
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.mission p{
+    text-align: justify;
+   margin-left: 20%;
+   margin-right: 20%;
+   margin-bottom: 20px;
+}
+@media only screen and (min-width: 800px)
+{
+    .c1,.c2,.c3,.c4{
+        width: 20%;
+ margin-left: 2%;
+ margin-right: 1%;
+    }
+    .c1{
+margin-left: 5%;
+    }
+}
+
+
+@media only screen and (max-width: 800px)
+{
+    .c1,.c2,.c3,.c4{
+        width: 45%;
+ margin-left: 2%;
+ margin-right: 2%;
+    }
+
+}
+
+.c1,.c2,.c3,.c4{
+    display: inline-block;
+        box-shadow: 2px 2px 10px gray;
+ text-align: center;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 540px){
+    .c1,.c2,.c3,.c4{
+        width: 98%;
+        margin-right: 1%;
+        margin-left: 1%;
+        box-shadow: 2px 2px 10px gray;
+        margin-bottom: 4%;
+    }
+    .mission h2{
+        
+        font-size: 3em;
+      
+    }
+  
+}
+
+
+/* newsletter */
+
+@media only screen and (min-width: 800px){   
+    .newsletterp{
+   
+   width: 43%;
+   margin-left: 5%;
+} 
+
+
+}
+@media only screen and (max-width: 800px){   
+     .newsletterp{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+     }
+}
+
+.newsletterf,.newsletterp{
+    margin-top: 20px;
+    float: left;
+    margin-bottom: 20px;
+ 
+}
+
+@media only screen and (max-width: 800px){   
+     .newsletterf{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+}
+@media only screen and (min-width: 800px){   
+ 
+    .newsletterf{
+       
+        width: 45%;
+        margin-right: 5%;
+        padding-left: 5%;
+      
+     } 
+    
+    }
+
+.newsletter h3{
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: left;
+  font-weight: 500;
+    padding-top: 10px;
+    
+}
+.newsletterf hr{
+    width: 30%;
+    align-self: center;
+   background-color: #009688 ;
+}
+.ne,.nb{
+    height: 40px;
+}
+.ne{
+    background-color: azure;
+    
+}
+.nb{
+  background-color:  #006064;
+  color: white;
+}
+.newsletter{
+    margin-bottom: 20px;
+}
+
+/* bottom */
+.bottom
+ {
+     clear: both;
+padding-top: 20px;
+background-color: rgb(19, 15, 15);
+padding-bottom: 20px;
+
+ }
+ .i{
+    margin-bottom: 0px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+ .b5,.b4,.b3,.b6
+ {
+     display: inline-block;
+     text-align: left;
+   
+     background-color:rgb(19, 15, 15);
+
+     padding-bottom: 40px;
+     align-content: center;
+       vertical-align: top;
+       color: white !important;
+      
+ }
+ .b3 a{
+     color: #885cec;
+     text-align: left;
+     padding-left: 0%;
+ }
+
+ .loc{
+     vertical-align: top;
+     margin-right: 10px;
+ }
+ .b6{
+
+text-align: center;
+ }
+     
+ 
+ hr {
+   
+    height: 1px;
+    
+    background: linear-gradient(to right, #006064 10%,#009688 90%);
+}
+.btl{
+    margin-right: 20px;
+}
+@media only screen and (max-width: 800px){   
+    .b5,.b4,.b3,.b6
+    {
+  width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;   
+    }
+  
+
+}
+@media only screen and (min-width: 800px){   
+
+    .b5,.b4,.b3,.b6
+    {
+  width: 20%;
+      margin-left: 2%;
+      margin-right: 2%;   
+    }
+   
+
+   }
+   @media only screen and (max-width: 960px){   
+    .b6 img{
+        width: 150px;
+    }
+
+  }
+  @media only screen and (max-width: 800px){   
+    .b6 img{
+        width: 200px;
+    }
+
+  }
+
+
+  
+/* end copyright */
+.ending{
+    background-color: #3700b3;
+    padding-top :5px;
+    padding-bottom: 5px;
+    color: white;
+   
+    text-align: start;
+    padding-left: 5%;
+    font-size: smaller;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/* contact Us */
+.contact h1{
+    font-family:  Impact,  'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 15px;
+    text-shadow: 2px 2px 1px grey;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+.contact{
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  
+}
+.bordder{
+    clear:both;
+    border-bottom: 1px solid grey;
+    margin-left: 5.75%;
+    margin-right: 5.75%;
+}
+.call ,.visit ,.email{
+  float: left;
+    width: 28%;
+    margin-left: 4%;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.call1,.call2{
+    display: inline-block;
+   width: 48%;
+  
+   margin-right: 1%;
+    
+ 
+    
+}
+.visit iframe{
+    width: 95%;
+}
+
+
+@media only screen and (max-width: 920px){   
+    .call ,.visit ,.email{
+       margin-left: 4%;
+width: 29%;
+       
+    }
+    .contact{
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 4%;
+        
+      }
+      .bordder{
+        clear:both;
+        border-bottom: 1px solid grey;
+        margin-left: 4%;
+        margin-right: 5%;
+    }
+    }
+      @media only screen and (max-width: 800px){ 
+      
+        .call ,.visit ,.email{
+           
+            width: 80%;
+            /* text-align: left; */
+            margin-left: 10%;
+        }
+      
+        .bordder{
+            clear:both;
+            border-bottom: 1px solid grey;
+            margin-left: 9%;
+            margin-right: 14%;
+        }
+     
+        
+    }
+
+    .comment{
+        margin-top: 50px;
+clear: both;
+text-align: center;
+    }
+    .comment hr{
+        width: 5%;
+    }
+    .cform{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .cformi{
+        clear: both;
+        padding: 10px ;
+        margin-top: 10px;
+        margin-bottom: 10px;
+     background-color:  azure;
+     border: 2px solid #006064;
+     width: 60%;
+    }
+    .cform form  :focus{
+        border: 3px solid #006064;
+        box-shadow: 2px 2px  5px #006064 ;
+    }
+    .cformib{
+
+  background-color:  #006064;
+  color: white;
+  padding: 10px !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
+    }
+    .cformib:hover{
+        zoom: 1.1;
+    }
+    @media only screen and (max-width: 800px){   
+        .cformi{
+            width: 80%;
+        }
+
+    }
+
+
+
+    /* domestic products */
+     .dphead h1{
+        font-family:  Impact,  'Arial Narrow Bold', sans-serif;
+        font-size: 3em;
+        text-align: center;
+        padding-top: 15px;
+        text-shadow: 2px 2px 1px grey;
+        padding-bottom: 20px;
+        padding-top: 20px;
+     }
+
+.btn{
+    background-color: #006064 !important;
+    border: 1px solid #006064;
+    margin: 1px;
+}
+.btn2{
+    margin: 5px;
+}
+.btn:hover{
+    border: 2px solid #09adb3;
+    box-shadow: none !important;
+    zoom: 1.05;
+}
+.btn:focus{
+    border: 2px solid #09adb3 !important;
+    box-shadow: none !important;
+
+}
+
+    .product{
+        margin-top: 30px;
+        margin-bottom: 2%;
+    }
+   
+    .c1,.c2,.c3,.c4{
+        display: inline-block;
+    
+        box-shadow: 2px 2px 10px #006064;
+     text-align: center;
+     margin-bottom: 50px;
+     background-color: white !important;
+       border: 1px solid #006064;
+
+    }
+    .card{
+border: none;
+    }
+    @media only screen and (min-width: 1120px)
+    {
+        .c1,.c2,.c3,.c4{
+            width: 22.5%;
+            margin-left: 1%;
+       
+        }
+      
+    }
+ 
+    @media only screen and (max-width: 1120px)
+    {
+        .c1,.c2,.c3,.c4{
+            width: 30%;
+            margin-left: 2%;
+        
+        }
+          
+        /* }
+        .card{
+            height: 550px;
+        } */
+    
+    }
+    @media only screen and (max-width: 960px)
+    {
+        .c1,.c2,.c3,.c4{
+            width: 45%;
+            margin-left: 2%;
+        }
+    
+    }
+
+    @media only screen and (max-width: 600px){
+        .c1,.c2,.c3,.c4{
+            
+            width: 90%;
+            margin-left: 5%;
+            box-shadow: 2px 2px 10px gray;
+            margin-bottom: 4%;
+        }
+    } 
+
+
+
+
+
+
+
+    /* The Overlay (background) */
+.overlay {
+     
+    height: 100%;
+    width: 0;
+  
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden;
+    transition: 0.5s; 
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+     top: 15%; 
+    width: 100%; 
+    text-align: center; 
+   
+    color: azure;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+   
+    text-decoration: none;
+   
+    color: #818181;
+    
+  }
+  .overlay .closebtndown {
+  
+    font-size: 60px;
+   
+    text-decoration: none;
+   
+    color: #818181;
+    
+  }
+
+
+.overlay-contentinpu{
+    width: 50%;
+    height: 2.5em;
+    margin-bottom: 10px;
+    border: 2px solid #006064;
+    background-color: azure;
+}
+.contlabel{
+
+   font-size: 1.2em;
+}
+.overlayp{
+    width: 100% !important;
+padding-left: 20% !important;
+padding-right: 20% !important;
+text-align: justify;
+    
+}
+.overform{
+    text-align: left;
+padding-left: 15%;}
+
+.overlay-contentinpu input :focus{
+    border: 3px solid #006064;
+    box-shadow: 2px 2px  5px #006064 ;
+}
+
+
+
+@media screen and (max-height: 720px ) {
+
+    .overlay-contentinpu{
+        width: 80%;
+        
+    }
+    .overlayp{
+        clear: both;
+        width: 100% !important ;
+        padding-left: 10% !important;
+        padding-right: 10% !important ;
+    }
+ .overlay-content img{
+     width: 70% ;
+ } 
+  }
+
+
+
+
+@media screen and (max-height: 450px) {
+
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+    .overlay .closebtndown {
+        font-size: 40px;
+        bottom: 15px;
+        right: 35px;
+      }
+  
+      
+  
+  }
+  
