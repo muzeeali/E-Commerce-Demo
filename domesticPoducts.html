@@ -8,6 +8,31 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDwJM5ahrTRCkybcEhyJFqAiGxb2y4eGMU",
+    authDomain: "e-commerce-web-pro.firebaseapp.com",
+    projectId: "e-commerce-web-pro",
+    storageBucket: "e-commerce-web-pro.appspot.com",
+    messagingSenderId: "717388717419",
+    appId: "1:717388717419:web:9cfb3be24026be90ac402e",
+    measurementId: "G-01LDJSR5HT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+</script>
+    
   </head>
 <body>
     <div class="navmain">   
@@ -184,17 +209,19 @@
     <div class="overform">
  <form action="">
 <label class="contlabel" for="pt">Product Title : </label><br>
-<input required class="overlay-contentinpu" type="text" id="pt" name="Product title" maxlength="100" placeholder="Product Name"><br>
+<input  required class="overlay-contentinpu" type="text" id="pt" name="Product title" maxlength="100" placeholder="Product Name" ><br>
 <label class="contlabel" for="pq">Qunatity :  </label><br>
 <input required class="overlay-contentinpu" type="number" id="pq" name="Product quntity" maxlength="100" placeholder="Product Qunatity"><br>
 <label class="contlabel" for="Ea">Email Address : </label><br>
-<input required class="overlay-contentinpu" type="email" id="Ea" name="order email address" maxlength="100" placeholder="Email Address"><br>
+<input  required class="overlay-contentinpu" type="email" id="Ea" name="order email address" maxlength="100" placeholder="Email Address"><br>
 <label class="contlabel" for="pn">Cell Phone Number: </label><br>
-<input required class="overlay-contentinpu" type="text" id="pn" name="order cell number" maxlength="100" placeholder="Cell Phone Number"><br>
+<input  required class="overlay-contentinpu" type="text" id="pn" name="order cell number" maxlength="100" placeholder="Cell Phone Number"><br>
+<label class="contlabel" for="pn">Postal Address: </label><br>
+<input  required class="overlay-contentinpu" type="text" id="pa" name="order cell number" maxlength="200" placeholder="Postal Address"><br>
 <div>
  
     <button type="reset" class="btn btn-primary">RESET</button>
-<button type="submit" class="btn btn-primary">SUBMIT</button>
+<button type="submit" onclick="db()" class="btn btn-primary">SUBMIT</button>
 </div>
 </form>
 </div>
@@ -253,7 +280,7 @@
       <div class="overlayp" >
       <p >Aqua ensure proposes to supply a water filtration plant with softening unit for this project. The objective of the treatment process is to produce processes water efficiently and economically from source water tube wells. The filtration system to be provided will produce a product water quality of less than 50 mg/L hardness when operating on a feed water, at a water temperature of 25 c with its design optimum efficiency to give maximum product at best result. The filtration plant with softening unit will be of robust construction and designed to conservative standards for versatility in the event of feed water quality and temperature variations. The system design will include provisions for easy maintenance easy approach towards equipment and auto backwash to minimize fouling and piping corrosion. The filtration plant with softening unit provided will include sand and multi cartridge filter include 02 number of 5 micron filter to remove any undesirable impurities material of construction for the fabrication of sand filter and is FRP, and softener material of construction is FRP for polishing of soft water fine filtration system are installed. The filtration plant with softening unit will be proved by parts and in 1st stage the components of system are delivered to site of installation. The unit will be assembled, prewired system, in order to accommodate easily at the site of installation. The filtration plant with softening unit supplied will include automatic valves and switches and shall be capable of automatic operation with minimal human involvement.</p>
     </div>
-      <img src="image/c3.jpg"  alt="">
+      <img src="image/c3.jpg" alt="">
   <br>
   <br>
   <span onclick="closeNav3()" class="btn  btn-primary">CLOSE</span> 
@@ -390,18 +417,15 @@
   <hr>
 <address>
  <p>
-  <i class="fas fa-phone-alt"  style="font-size:100%"> </i> <a  href="tel:031212345678"> +92 312 12345678</a>
- </p>
- <p> 
-  <i class="fab fa-whatsapp" style="font-size:130%"> </i> <a   href="https://wa.me/009231212345678/?text=WELCOME"> +92 312 12345678</a>
+  <i class="fas fa-phone-alt"  > </i> (+92-42-123324234 | +92-42-12345678-5)
 </p>
 <p>
 
   <i class="far fa-envelope"  style="font-size:110%"></i><a href="mailto: muzeeali8@gmail.com"> muzeeali8@gmail.com</a>
 </p>
-
-  <i class="fas loc fa-map-marker-alt " style="font-size:120%"></i><iframe src="https://www.google.com/maps/d/embed?mid=1rwSC4Zel8v3ywPeaibqjPQPWGMo" width="90%" ></iframe>
-
+<p>
+  <i class="fas fa-map-marker-alt " style="font-size:120%"></i> 242 Street-5 Cavalry Ground Lahore Cantt.Pakistan
+</p>
 </address>
 </div>
 
@@ -433,5 +457,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        
 </body>
 </html>
